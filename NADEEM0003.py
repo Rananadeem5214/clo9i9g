@@ -8,7 +8,7 @@ import os, sys, time, datetime, re, threading, json, random, requests, hashlib, 
 from multiprocessing.pool import ThreadPool
 from requests.exceptions import ConnectionError
 __author__ = 'Rana Nadeem'
-__copyright = 'All rights reserved . Copyright  Rana Nadeem Rajput
+__copyright = 'All rights reserved . Copyright  Rana Nadeem Rajput'
 os.system('termux-setup-storage')
 try:
     os.mkdir('/sdcard/ids')

